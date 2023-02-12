@@ -1,4 +1,4 @@
-package baseball;
+package test.java.baseball;
 
 import camp.nextstep.edu.missionutils.test.NsTest;
 import org.junit.jupiter.api.Test;
@@ -7,6 +7,8 @@ import static camp.nextstep.edu.missionutils.test.Assertions.assertRandomNumberI
 import static camp.nextstep.edu.missionutils.test.Assertions.assertSimpleTest;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static sun.security.pkcs12.PKCS12KeyStore.RetryWithZero.run;
 
 class ApplicationTest extends NsTest {
     @Test
@@ -19,6 +21,7 @@ class ApplicationTest extends NsTest {
                 1, 3, 5, 5, 8, 9
         );
     }
+
 
     @Test
     void 예외_테스트() {
